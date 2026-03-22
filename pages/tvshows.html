@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineMate – TV Shows</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/movies.css" />
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-icon">🎬</span>
+      <span class="logo-text">Cine<span>Mate</span></span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-item">🏠 Home</a>
+      <a href="movies.html" class="nav-item">🎥 Movies</a>
+      <a href="tvshows.html" class="nav-item active">📺 TV Shows</a>
+      <a href="favourites.html" class="nav-item">❤️ Favourites</a>
+    </nav>
+    <div class="sidebar-search">
+      <input type="text" placeholder="🔍  Search..." />
+    </div>
+    <div class="sidebar-footer-note">
+      <span class="sidebar-badge">⭐ Maleesha</span>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div>
+        <h1>📺 <span class="highlight">TV</span> Shows</h1>
+        <p>From prestige drama to binge-worthy comedies — explore the best shows of all time.</p>
+      </div>
+    </section>
+
+    <!-- FILTERS -->
+    <section class="filters-section">
+      <div class="search-bar">
+        <span>🔍</span>
+        <input type="text" placeholder="Search TV shows..." />
+        <select>
+          <option>All Genres</option>
+          <option>Drama</option>
+          <option>Comedy</option>
+          <option>Crime</option>
+          <option>Sci-Fi</option>
+          <option>Fantasy</option>
+          <option>Thriller</option>
+        </select>
+        <select>
+          <option>All Status</option>
+          <option>Ongoing</option>
+          <option>Ended</option>
+        </select>
+        <button class="btn-primary">Search</button>
+      </div>
+    </section>
+
+    <!-- GENRE PILLS -->
+    <section class="genre-section">
+      <div class="genre-pills">
+        <button class="pill active">All</button>
+        <button class="pill">🎭 Drama</button>
+        <button class="pill">😂 Comedy</button>
+        <button class="pill">🔍 Crime</button>
+        <button class="pill">🚀 Sci-Fi</button>
+        <button class="pill">🧙 Fantasy</button>
+        <button class="pill">🔪 Thriller</button>
+      </div>
+    </section>
+
+    <!-- TV SHOWS GRID -->
+    <section class="movies-section">
+      <div class="movies-grid">
+
+        <div class="movie-card">
+          <div class="card-poster">
+            <span class="card-badge badge-trending">TRENDING</span>
+            <button class="fav-btn">🤍</button>
+            <img src="https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg" alt="Breaking Bad" />
+            <div class="overlay"><a href="details/breaking-bad.html">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <h4>Breaking Bad</h4>
+            <div class="card-meta"><span>2008–2013</span><span>Crime</span></div>
+            <div class="card-rating">⭐ 9.5</div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="card-poster">
+            <span class="card-badge badge-top">TOP</span>
+            <button class="fav-btn">🤍</button>
+            <img src="https://image.tmdb.org/t/p/w500/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg" alt="Chernobyl" />
+            <div class="overlay"><a href="details/chernobyl.html">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <h4>Chernobyl</h4>
+            <div class="card-meta"><span>2019</span><span>Drama</span></div>
+            <div class="card-rating">⭐ 9.4</div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="card-poster">
+            <button class="fav-btn">🤍</button>
+            <img src="https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg" alt="Stranger Things" />
+            <div class="overlay"><a href="details/stranger-things.html">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <h4>Stranger Things</h4>
+            <div class="card-meta"><span>2016–</span><span>Sci-Fi</span></div>
+            <div class="card-rating">⭐ 8.7</div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="card-poster">
+            <span class="card-badge badge-ongoing">ONGOING</span>
+            <button class="fav-btn">🤍</button>
+            <img src="https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt="The Last of Us" />
+            <div class="overlay"><a href="details/the-last-of-us.html">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <h4>The Last of Us</h4>
+            <div class="card-meta"><span>2023–</span><span>Drama</span></div>
+            <div class="card-rating">⭐ 8.8</div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="card-poster">
+            <button class="fav-btn">🤍</button>
+            <img src="https://image.tmdb.org/t/p/w500/4lbclFySvugI51fwsyxBTOm4DqK.jpg" alt="The Wire" />
+            <div class="overlay"><a href="details/the-wire.html">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <h4>The Wire</h4>
+            <div class="card-meta"><span>2002–2008</span><span>Crime</span></div>
+            <div class="card-rating">⭐ 9.3</div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="card-poster">
+            <button class="fav-btn">🤍</button>
+            <img src="https://image.tmdb.org/t/p/w500/7HW47XbkNQ5fiwQFYGWdw9gs144.jpg" alt="Succession" />
+            <div class="overlay"><a href="details/succession.html">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <h4>Succession</h4>
+            <div class="card-meta"><span>2018–2023</span><span>Drama</span></div>
+            <div class="card-rating">⭐ 8.8</div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="card-poster">
+            <span class="card-badge badge-ongoing">ONGOING</span>
+            <button class="fav-btn">🤍</button>
+            <img src="https://image.tmdb.org/t/p/w500/z2yahl2uefxDCl0nogcRBstwruJ.jpg" alt="House of the Dragon" />
+            <div class="overlay"><a href="details/house-of-the-dragon.html">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <h4>House of the Dragon</h4>
+            <div class="card-meta"><span>2022–</span><span>Fantasy</span></div>
+            <div class="card-rating">⭐ 8.4</div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="card-poster">
+            <button class="fav-btn">🤍</button>
+            <img src="https://image.tmdb.org/t/p/w500/7DJKHzAi83BmQrWLrYYOqcoKfhR.jpg" alt="The Office US" />
+            <div class="overlay"><a href="details/the-office.html">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <h4>The Office (US)</h4>
+            <div class="card-meta"><span>2005–2013</span><span>Comedy</span></div>
+            <div class="card-rating">⭐ 9.0</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">Cine<span>Mate</span></span>
+          <p>A movie and TV show discovery app built as part of the Web Architectures course.</p>
+        </div>
+        <div class="footer-links">
+          <h4>PAGES</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tvshows.html">TV Shows</a></li>
+            <li><a href="#">Favourites</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>RESOURCES</h4>
+          <ul>
+            <li><a href="#">GitHub Repo</a></li>
+            <li><a href="#">TMDB API</a></li>
+            <li><a href="#">MDN Docs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 CineMate – Web Architectures Project</span>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>

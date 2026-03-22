@@ -1,0 +1,42 @@
+/* 4-column grid for favourites */
+.fav-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Filled heart button */
+.fav-btn.fav-active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.fav-btn.fav-active:hover {
+  background: var(--accent2);
+  color: #fff;
+}
+
+/* Clear all button row */
+.clear-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.btn-clear {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-clear:hover {
+  border-color: var(--accent2);
+  color: var(--accent2);
+}
+
+@media (max-width: 900px) {
+  .fav-grid { grid-template-columns: repeat(2, 1fr); }
+}
