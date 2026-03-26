@@ -61,11 +61,17 @@
 
 @media (max-width: 900px) {
   .movies-grid { grid-template-columns: repeat(3, 1fr); }
+  .page-header, .filters-section, .movies-section { padding-left: 32px; padding-right: 32px; }
 }
 
 @media (max-width: 640px) {
   .movies-grid { grid-template-columns: repeat(2, 1fr); }
   .page-header, .filters-section, .movies-section { padding-left: 20px; padding-right: 20px; }
+  .page-header h1 { font-size: 1.5rem; }
+}
+
+@media (max-width: 400px) {
+  .movies-grid { grid-template-columns: 1fr; }
 }
 
 /* ── HOVER OVERLAY for movies/tvshows pages ── */

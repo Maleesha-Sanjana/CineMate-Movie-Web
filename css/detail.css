@@ -184,4 +184,21 @@
   .detail-hero { grid-template-columns: 1fr; }
   .detail-cards { grid-template-columns: repeat(3, 1fr); }
   .similar-grid { grid-template-columns: repeat(2, 1fr); }
+  .back-link, .detail-hero, .detail-section { padding-left: 32px; padding-right: 32px; }
+}
+
+@media (max-width: 640px) {
+  .back-link, .detail-hero, .detail-section { padding-left: 20px; padding-right: 20px; }
+  .detail-info h1 { font-size: 1.6rem; }
+  .detail-cards { grid-template-columns: repeat(2, 1fr); }
+  .detail-actions { flex-direction: column; }
+  .detail-actions .btn-primary,
+  .detail-actions .btn-ghost { width: 100%; text-align: center; }
+  .similar-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 400px) {
+  .detail-cards { grid-template-columns: repeat(2, 1fr); }
+  .similar-grid { grid-template-columns: 1fr; }
+  .cast-grid { justify-content: center; }
 }
